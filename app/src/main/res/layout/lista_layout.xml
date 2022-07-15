@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_layout"
+        android:paddingRight="0dp"
+        android:paddingLeft="10dp"
+
+        android:layout_marginVertical="12dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="10dp">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+
+            android:layout_marginLeft="3dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_baseline_calendar_today_24"
+            android:background="@drawable/cal_back"
+            android:padding="5dp"
+            />
+        <LinearLayout
+            android:paddingLeft="10dp"
+            android:layout_width="0dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="name_here"
+                android:textSize="19dp"
+                android:id="@+id/name_here"
+                android:fontFamily="@font/open_sans_semi_bold_not_italic"
+                android:textColor="#A2D5AB"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="4dp"
+                android:text="dd/mm/yyyy"
+                android:id="@+id/date_here"
+                android:fontFamily="@font/open_sans_regular"
+                android:textColor="#A2D5AB"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sa7_glat_back"
+            android:paddingHorizontal="30dp"
+            android:id="@+id/father_here"
+            android:paddingVertical="20dp">
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    "
+            android:id="@+id/txta_here"
+            android:textSize="25dp" android:textColor="#A2D5AB"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

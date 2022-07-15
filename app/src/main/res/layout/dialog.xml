@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/dialog_background"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Fill The Blanks"
+            android:textColor="@color/black"
+
+            android:textSize="25sp"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/_wj"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:id="@+id/nema"
+            android:fontFamily="@font/_wj"
+            android:textSize="20sp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:hint="dd/mm/yyyy"
+            android:inputType="date"
+            android:id="@+id/deta"
+            android:fontFamily="@font/_wj"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:paddingTop="28dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="0dp"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content"
+                android:background="#189AB4"
+                android:text="cancel"
+                android:textSize="20sp"
+                android:id="@+id/cancela"
+
+                android:textColor="#A2D5AB"
+                android:fontFamily="@font/the_confession_full_regular_qz"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+            <Button
+                android:layout_width="0dp"
+                android:background="#189AB4"
+                android:layout_margin="5dp"
+                android:text="Add"
+                android:textSize="20sp"
+                android:id="@+id/seta"
+                android:textColor="#A2D5AB"
+                android:fontFamily="@font/the_confession_full_regular_qz"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
